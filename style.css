@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+}
+body{
+    font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary{
+       color: var(--pink)!important;
+}
+
+/* navbar */
+.navbar{
+        -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+}
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+.nav-item{
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+
+#header{
+    background: url(./images/hero\ 1.jpg) top/cover no-repeat;
+    width: 100vw;
+    height: 100vh;
+   position: relative;
+   
+}
+.carousel-inner h1{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+/* .carousel-item .btn{
+    border-color: #fff!important;
+} */
+.btn:hover{
+    border-color: var(--pink)!important;
+}
+
+.wrapper {
+    
+    width: 100vw;
+    height: 50vh;
+    box-sizing: border-box;  
+}
+
+.first-box {
+    display: flex;
+    padding: 2em;
+}
+
+.first-box img {
+    width: 42vw;
+    height: 45.3vh;
+    position: relative;
+    margin-left: 2em;
+    object-fit: cover;
+  }
+
+.image-1 {
+    width: 50%;
+    position: relative;
+}
+
+.image-1 img{
+    object-fit: cover;
+    height: 600PX; 
+}
+
+
+
+.first-box button {
+    position: absolute;
+    bottom: 1vh;
+    right: 4.5vw;
+    cursor: pointer;
+}
+
+.second-box  {
+    width: 100%;
+    margin-right: 2em;
+}
+
+.second-box img {
+    width: 100%;
+    height: 295px;
+    margin-left: 1em;
+    object-fit: cover;
+}
+
+.image-2 {
+    position: relative;
+    object-fit: cover;
+}
+
+.image-2 button{
+        position: absolute;
+        bottom: 1.5vh;
+        right: 1.5vw;
+  }
+
+.image-3 {
+        margin-top: 0.6em;
+        position: relative;
+}
+
+.image-3 button{
+        position: absolute;
+        bottom: 1.5vh;
+        right: 1.5vw;
+}
+
+
+/* BUTTON */
+  button {
+        background-color: #fff;
+        color: rgb(85, 85, 85);
+        padding: 10px 28px;
+        border-radius: 25px;
+        border: 1px solid rgb(85, 85, 85);
+  }
+
+  button:hover {
+        background-color: var(--pink);
+        color: #fff;
+        border-color: var(--pink);
+  }
+
+/* MEDIA QUERRY */
+
+  @media only screen and (max-width: 900px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+   #header {
+        width: 100vw;
+        height: 60vh;
+   }
+        
+
+  .first-box {
+        display: block;
+        flex-direction: row;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .image-1 {
+        width: 100vw;
+        height: 60vh;
+        margin-top: auto;
+    }
+   
+  .image-1 img{
+        width: 100vw;
+        height: 60vh;
+        margin: 0;
+  }
+
+.image-2 img{
+        width: 100vw;
+        height: 60vh;
+        margin: 0;
+}
+
+  .image-3 img{
+        width: 100vw;
+        height: 60vh;
+        margin: 0;
+  }
+
+  }
+
+ 
